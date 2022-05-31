@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text] {
+  width: 10%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input[type=image] {
+  width: 10%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=image]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h2>Adding a new song</h2>
+    <form action="" method="post"enctype="text/plain">
+       <label>    song  name :  </label>
+    <input type="text" name="Name" value=""><br>
+    <label>date released:</label>
+    <input type="text" name="date" value=""><br>
+    <label>Artwork:</label>
+    <input type="image" name="image"value=" upload image"><br>
+    <table cellspacing="10">
+    <tr>
+    <td>
+    <label>Artists:</label>
+      <select>
+        <option>search</option>
+    <option>Lewis cadalpi</option>
+    <option>post malone</option>
+    <option>justin Beiber</option>
+    <option>QVAVO</option>
+    <option>juice WRLD</option>
+    </select>
+    </td><td>
+    <button type="add" onclick="Addsong.html">+  Add Artist</button></td>
+    </tr>
+    </table>
+    <button type="save">Save</button>
+    <button type="cancel" onclick="javascript:window.location='http://stackoverflow.com';">Cancel</button>
+    
+    </form>
+</form>
+
+</body>
+</html>
